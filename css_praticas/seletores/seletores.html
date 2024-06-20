@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title> Teste </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            *
+            {
+                font-family:Arial, Helvetica, sans-serif;
+
+            }
+
+            body
+            {
+                margin:0;
+            }
+
+
+            /*Simple selectors
+            Nota: não vou usar o seletor simples de elemeno pra não danificar o exemplo*/
+            .classe
+            {
+                background-color:red; 
+            }
+
+            #id_teste
+            {
+                background-color:green;
+            }
+
+            /*Combiner Selectors*/
+
+            .div_decendents  p
+            {
+                background-color: aquamarine;
+            }
+
+            .div_child > p
+            {
+                background-color: magenta ;
+            }
+
+
+            /*General Simbling*/
+            .div_general_simbling ~ p 
+            {
+                background-color:blueviolet;
+            }
+
+            /*Adjacent Simbling 
+            não vou combinar com o p devido o fato do geberak simbling ja estar combinado 
+            ou seja, ele esta selecionando todos os <P> da pagina que forem seus irmaos gerais e isso daria uma certa confusão */
+            .div_adjacent_simbling + h3
+            {
+                background-color: black;
+                color: white; 
+            }
+
+
+
+
+        </style>
+
+
+    </head>
+
+    <body>
+        <h1>1-SIMPLE SELECTORS</h1>
+
+        <p class="classe">O seletor deste uma simples (classe) </p>
+        <p id="id_teste">O seletor deste é simples (id)</p>
+
+
+        <h1>2-COMBINER SELECTORS</h1>
+
+        <h2>Decendents</h2>
+
+        <div class="div_decendents">
+            <p>Este é filho direto e decendente da div pai</p>
+            <p>Este é filho direto e decendente da div pai</p>
+
+            <div>
+                <p>Este é decendente da div pai</p>
+                <p>Este é decendente da div pai</p>
+            </div>
+
+        </div>
+
+        <h2>Child</h2>
+        <div class="div_child">
+            <p>Este é filho direto e decendente da div pai</p>
+            <p>Este é filho direto e decendente da div pai</p>
+
+            <div>
+                <p>Este é decendente da div pai</p>
+                <p>Este é decendente da div pai</p>
+            </div>
+            
+        </div>
+
+        <h2>General Simbling</h2>
+        <div class="div_general_simbling">
+            <p>Este é filho direto e decendente da div pai</p>
+            <p>Este é filho direto e decendente da div pai</p>
+
+            <div>
+                <p>Este é decendente da div pai</p>
+                <p>Este é decendente da div pai</p>
+            </div>
+            
+        </div>
+
+        <p>Este é um irmao geral da ultima div</p>
+        <p>Este é um irmao geral da ultima div</p>
+
+
+        <h2>General Simbling</h2>
+        <div class="div_adjacent_simbling">
+            <h3>Este é filho direto e decendente da div pai</h3>
+            <h3>Este é filho direto e decendente da div pai</h3>
+
+            <div>
+                <h3>Este é decendente da div pai</h3>
+                <h3>Este é decendente da div pai</h3>
+            </div>
+            
+        </div>
+
+        <h3>Este é PRIMEIRO irmao geral da ultima div</h3>
+        <h3>Este é um irmao geral da ultima div</h3>
+
+    </body>
+
+
+</html>
