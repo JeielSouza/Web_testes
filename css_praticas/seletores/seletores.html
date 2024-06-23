@@ -9,6 +9,7 @@
             *
             {
                 font-family:Arial, Helvetica, sans-serif;
+                box-sizing: border-box;
 
             }
 
@@ -58,6 +59,37 @@
                 color: white; 
             }
 
+            /* PSEUDOCLASSES */
+            /*hover - quando passamos o mouse por cima ele muda seu estilo autoamticamente*/
+
+            .but:hover 
+            {
+                font-size: 1.1em;
+                background-color: black ; 
+                color: white;
+            }
+
+            .teste_link:link 
+            {
+                color:red;
+            }
+
+            .teste_visited:visited
+            {
+                color:magenta;
+            }
+
+            .teste_hover:hover 
+            {
+                color:aqua;
+            }
+
+            .teste_active:active
+            {
+                color:brown; 
+            }
+            
+
 
 
 
@@ -72,6 +104,9 @@
         <p class="classe">O seletor deste uma simples (classe) </p>
         <p id="id_teste">O seletor deste é simples (id)</p>
 
+        <br>
+        <br>
+        <hr>
 
         <h1>2-COMBINER SELECTORS</h1>
 
@@ -130,6 +165,23 @@
 
         <h3>Este é PRIMEIRO irmao geral da ultima div</h3>
         <h3>Este é um irmao geral da ultima div</h3>
+
+        <hr>
+        <br>
+        <h1>3- PESEUDOCLASS</h1>
+
+        <button type="button" class="but">TESTE</button>
+
+        <h2>Testando pseudoclass com links</h2>
+
+        <a href="http://www.youtube.com.br" target="_blank" class="teste_link">L I N K</a>
+        <p></p>
+        <a href="http://www.youtube.com.br" target="_blank" class="teste_visited">V I S I T E D</a>
+        <p></p>
+        <a href="http://www.youtube.com.br" target="_blank" class="teste_hover">H O V E R</a>
+        <p></p>
+        <a href="http://www.youtube.com.br" target="_blank" class="teste_active">A C T I V E</a>
+        
 
     </body>
 
