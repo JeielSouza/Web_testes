@@ -18,9 +18,7 @@
                 margin:0;
             }
 
-
-            /*Simple selectors
-            Nota: não vou usar o seletor simples de elemeno pra não danificar o exemplo*/
+/*-------------------------------------COMBINER SELECTORS------------------------------------------------------*/
             .classe
             {
                 background-color:red; 
@@ -59,7 +57,7 @@
                 color: white; 
             }
 
-            /* PSEUDOCLASSES */
+/*-------------------------------------PSEUDOCLASSES------------------------------------------------------*/
             /*hover - quando passamos o mouse por cima ele muda seu estilo autoamticamente*/
 
             .but:hover 
@@ -88,6 +86,26 @@
             {
                 color:brown; 
             }
+            
+/*------------------------------------PSEUDO ELEMENTS----------------------------------------*/
+            #teste_primeira_letra::first-letter
+            {
+                color:blue; 
+                
+            }
+
+            #teste_primeira_linha::first-line
+            {
+                color:red; 
+            }
+
+            #teste_selecao::selection
+            {
+                background-color:green;
+                color:white; 
+            }
+
+
             
 
             
@@ -182,7 +200,17 @@
         <a href="http://www.youtube.com.br" target="_blank" class="teste_hover">H O V E R</a>
         <p></p>
         <a href="http://www.youtube.com.br" target="_blank" class="teste_active">A C T I V E</a>
-        
+
+        <hr>
+        <br>
+
+        <h1>4- PSEUDO ELEMENTS</h1>
+        <h2 id="teste_primeira_letra">Vemos que a primeira cor da primeira letra do texto é azul<h2>
+        <h2 id="teste_primeira_linha"> Vemos que a primeira linha desse texto <br> Esta na cor vermelha</M></h2>
+        <h2 id="teste_selecao">Ao selecionar esse paragrafo temos a cor de funto verde e a cor do texto branca</h2>
+
+
+
 
     </body>
 
