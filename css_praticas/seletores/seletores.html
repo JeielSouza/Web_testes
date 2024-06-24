@@ -105,10 +105,49 @@
                 color:white; 
             }
 
-
             
-
+            #teste_depois li::after 
+            {
+                content:"🐒";
+            }
             
+            #teste_antes::before
+            {
+                content: "🍌";
+            }
+
+            #teste_bullet li::marker
+            {
+                content: "🍆";
+            }
+
+      
+/*------------------------------------ATTRIBUTS SELECTORS----------------------------------------*/
+            #teste_1  a[href]
+            {
+                color:red; 
+            }
+
+            #teste_2 a[target="_blank"]
+            {
+                color:green;
+            }
+
+            #teste_3 a[href^="https" ]
+            {
+                color:green;
+            }
+
+            #teste_4 a[href$=".org"]
+            {
+                color: red; 
+            }
+  
+
+            #teste_5 a[href*="oo"]
+            {
+                color: green;
+            }
 
 
 
@@ -208,7 +247,76 @@
         <h2 id="teste_primeira_letra">Vemos que a primeira cor da primeira letra do texto é azul<h2>
         <h2 id="teste_primeira_linha"> Vemos que a primeira linha desse texto <br> Esta na cor vermelha</M></h2>
         <h2 id="teste_selecao">Ao selecionar esse paragrafo temos a cor de funto verde e a cor do texto branca</h2>
+        
+        <br>
 
+        <h2>A seguir exemplos de ::before e ::after</h2>
+
+        <ul id="teste_depois">
+            <li id="teste_antes">Banana</li>
+            <li>Macaco</li>
+            <li>Matheus</li>
+            <li>Jeiel</li>
+        </ul>
+
+        <h2>Agora vamos estilizar o bullet ( marcador ) de uma lista não ordenada</h2>
+        <ul id="teste_bullet">
+            <li>Mambo</li>
+            <li>Muito Humilde</li>
+            <li>James Thompso</li>
+            <li>Adolf Stalin</li>
+        </ul>
+
+        <hr>
+        <br>
+        <h1>5- ATRIBUT SELECTORS</h1>
+
+        <h3>5.1. Serão Estilizados na cor vermelha elementos que tenha o atributo HREF dentro deles</h3>
+
+        <div id="teste_1">
+            <a href="https://www.google.com">Google</a> <br>
+            <a href="https://www.youtube.com" >Youtube</a> <br>
+            <a href="https://www.instagram.com">instagram</a>
+        </div>
+
+        <br>
+
+        <h3>5.2. Serão estilizado em verde os elemento que contenham o atributo target="blank" (apenas instagram)</h3>
+        <div id="teste_2">
+            <a href="https://www.google.com">Google</a> <br>
+            <a href="https://www.youtube.com">Youtube</a> <br>
+            <a href="https://www.instagram.com" target="_blank">instagram</a>
+
+        </div>
+
+        <br>
+        
+        <h3>5.3 Serão estilizados elementos que tenha somente href="https" como valor <br> Ou seja, so google e instagram</h3>
+
+        <div id="teste_3">
+            <a href="https://www.google.com">Google</a> <br> 
+            <a href="http://www.youtube.com">Youtube</a> <br>
+            <a href="https://wwww.instagram.com">Instagram</a>
+        </div>
+        
+        <br>
+        
+        <h3>5.4. Nesse exemplo apenas o link com .org vai receber um estilo ( wikipedia ) vermelho </h3>
+        <div id="teste_4">
+            <a href="https://www.google.com">Google</a> <br> 
+            <a href="http://www.youtube.com">Youtube</a> <br>
+            <a href="https://www.Wikipedia.org">Wikipedia</a>
+        </div>
+
+        <br>
+
+        <h3>5.5. Nesse exemplo recebera estilo somente o elemento que tiver ao menos "oo" no link ( google ) </h3>
+
+        <div id="teste_5">
+            <a href="https://www.google.com">Google</a> <br> 
+            <a href="http://www.youtube.com">Youtube</a> <br>
+            <a href="https://wwww.instagram.com">Instagram</a>
+        </div>
 
 
 
