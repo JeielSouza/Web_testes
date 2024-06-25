@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">    
+    <title>Bordas</title>
+    <style>
+        *{
+            box-sizing:border-box; 
+            font-family: Arial, Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            margin:0;
+        }
+
+        #cor_borda{
+            border-color: red;
+            border-width: 2px;
+            border-style: solid; 
+        }
+
+        #estilo{
+            border-color: black;
+            border-width: 2px; 
+            border-style:solid; 
+        }
+
+        #expessura{
+            border-color:aqua;
+            border-style:solid; 
+            border-width:10px;
+        }
+
+        #raio{
+            width:200px; 
+            height:200px; 
+            border-style:solid; 
+            border-color:red; 
+            border-width:4px; 
+            border-radius:20px; 
+        }
+
+        #esquerda{
+            height: 200px;
+            width: 200px; 
+            border-left-style: solid; 
+            border-left-color: red; 
+            border-left-width: 4px; 
+        }
+
+        #direita{
+            height:200px; 
+            width:200px; 
+            border-right-style: solid; 
+            border-right-color:red; 
+            border-right-width: 4px; 
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+    <h1>Bordas</h1>
+    <h2>Cor da borda</h2>
+    <p id="cor_borda">Essa caixa tem a borda de cor vermelha</p>
+    <hr>
+    <h2>Estilo da borda</h2>
+    <p id="estilo">Esse conteudo tem uma borda com estilo solid</p>
+    <hr>
+    <h2>Expessura da borda</h2>
+    <p id="expessura">Essa borda tem 10px de espessura</p>
+    <hr>
+    <h2>Radius</h2>
+    <p>O quadrado abaixo tem bordas arredondadas</p>
+    <div id="raio"></div>
+    <hr>
+    <h2>Individuladadde de bordas</h2>
+    <p>Abaixo a somente estilo a borda esquerda</p>
+    <div id="esquerda"></div>
+    <p>Abaixo a soment estilo a borda direita</p>
+    <div id="direita"></div>
+    
+    
+
+
+</body>
+
+
+
+</html>
