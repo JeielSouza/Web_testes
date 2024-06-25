@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Background</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing:border-box; 
+        }
+
+        body{
+            margin:0; 
+        }
+
+        #cor_fundo{
+            background-color:aqua;
+        }
+
+        #opacidade_1{
+            background-color: aqua; 
+            opacity: 0.2; 
+            width: 200px;
+            height: 200px;
+        }
+
+        #opacidade_2{
+            background-color: rgba(203,103,42, 0.5);
+            width: 200px; 
+            height: 200px; 
+        }
+
+        #imagem_fundo{
+            width: 200px;
+            height: 200px;
+            background-image: url("images/texas.jpg") ; 
+        }
+
+        #repetida_imagem{
+            width: 1920px; 
+            height: 500px;
+            background-image:url("images/texas.jpg"); 
+        }
+
+        #repeticao_x{
+            width:1920px; 
+            height: 100px; 
+            background-image: url("images/texas.jpg");
+            background-repeat: repeat-x; 
+        }
+
+        #repeticao_y{
+            width: 500px; 
+            height:500px; 
+            background-image: url("images/texas.jpg");
+            background-repeat: repeat-y;  
+        }
+
+        #sem_repeticao{
+            width:500px; 
+            height:500px; 
+            background-image: url("images/texas.jpg");
+            background-repeat: no-repeat;
+        }
+
+        #posicionamento{
+            width:1000px; 
+            height:1000px;
+            background-image: url("images/texas.jpg");
+            background-position: 500px 70px;
+            background-repeat: no-repeat ; 
+        }
+
+        #attach{
+            width:500px; 
+            height:500px; 
+            background-image: url("images/texas.jpg");
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+        }
+        
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Backgrounds</h1>
+    <P id="cor_fundo">Esse paragrafo tem uma cor de fundo</P>
+    <br>
+    <p>Os quadrados a seguir, o primeiro tem: <br> opacidade: 0.2  <br> O segundo tem: <br> Opacidade: 0.5 </p>
+    <br>
+    <div id="opacidade_1"></div>
+    <br>
+    <div id="opacidade_2"></div>
+    <br>
+    <hr>
+    <h2>Attachment</h2>
+    <div id="attach"> <p>Não entendo isso</p></div>
+    <hr>
+    <h2>Imagem de Fundo</h2>
+    <p>A seguir vemos uma imagem como plano de fundo de um elemento</p>
+    <div id="imagem_fundo"></div>
+    <hr>
+    <h2>Repetição de imagem </h2>
+    <div id="repetida_imagem"></div>
+    <br>
+    <h2>Repeticao em X</h2>
+    <div id="repeticao_x"></div>
+    <br>
+    <h2>Repeticao em Y</h2>
+    <div id="repeticao_y"></div>
+    <br>
+    <h2> Sem repeticao</h2>
+    <div id="sem_repeticao"></div>
+    <br>
+    <h2>Posicionamento a imagem</h2>
+    <div id="posicionamento"></div>
+
+</body>
+
+</html>
