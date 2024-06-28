@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Formatação de Texto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widte=device-width, initial-scale=1">
+        <style>
+            *{
+                box-sizing:border-box;
+                font-family:Arial, Helvetica, sans-serif; 
+            }
+
+            body{
+                margin: 0;
+
+            }
+
+            #cor{
+                color:red; 
+            }
+
+            #fundo{
+                background-color: black ;
+                color:white; 
+            }
+
+            /*=========== 1. ALINHAMENTO DE TEXTO  =================*/
+            #esquerda_caixa{
+                width: 1000px; 
+                height: 450px; 
+                border: 2px solid black;
+                text-align: left;
+            }
+
+
+
+            #ao_centro{
+                width:1000px; 
+                height:450px; 
+                border:2px solid black; 
+                text-align:center; 
+            }
+
+            #a_esquerda{
+                width:1000px; 
+                height:450px; 
+                border:2px solid black; 
+                text-align:right; 
+            }
+
+       
+            #justificado{
+                width: 500px; 
+                height: 450px; 
+                border: 2px solid black; 
+                text-align: justify;
+            }
+
+            /*====== 2. ALINHAMENTO ULTIMA LINHA A ESQUERDA ============*/
+            #linha_esquerda{
+                width: 300px; 
+                height:400px; 
+                border: 2px solid black; 
+                text-align-last: left; 
+                text-align: left; 
+            }
+
+            #linha_centro{
+                width:300px; 
+                height:400px; 
+                border: 2px solid black; 
+                text-align-last:center; 
+                text-align: left; 
+            }
+
+            #linha_direita{
+                width:300px; 
+                height:400px; 
+                border: 2px solid black; 
+                text-align-last: right; 
+                text-align: left; 
+            }
+
+             /*====== 3. ALTERANDO A DIREÇÃO DE UM TEXTO ============*/
+
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Formatação de Textos</h1>
+        <h3 id="cor">Esse texto possui cor vermelha</h3>
+        <h3 id="fundo">Esse elemento tem cor de fundo preta e cor branca</h3>
+        <br>
+        <hr>
+        <!---------------- 1. REFERENTE A PARTE SOBRE O ALINHAMENTO DO TEXTO ----------->
+        <h2>Veremos agora os alimhamentos horizontais em forma de papel (como se fosse o word) </h2>
+        <p>TEXTO ALINHADO A ESQUERDA</p>
+        <div id="esquerda_caixa">
+            <p>Esse é um exemplo de texto, e vemos que o mesmo esta alinhado <br> a esquerda, ou seja, esta encostando a esquerda</p>
+        </div>
+        <br>
+        <p>TEXTO ALINHADO AO CENTRO</p>
+        <div id="ao_centro">
+            <p>Este texto esta alinha ao centro<br>Mesmo com quebras de linha, ele continua ao centro. Vamos ver mais exemplos de textos, isso são exemplos de texto e continuam alinhado ao centro<br>Veja, ainda alinha ao centro. </p>
+        </div>
+        <br>
+        <p>TEXTO ALINHADO A DIREITA</p>
+        <div id="a_esquerda">   
+            <p>Este texto esta alinha a esquerda<br>Mesmo com quebras de linha, ele continua a esquerda. Vamos ver mais exemplos de textos, isso são exemplos de texto e continuam alinhado a esquerda<br>Veja, ainda alinha a esquerda. </p>  
+
+        </div>
+     
+        <br>
+        <p> TEXTO ALINHADO EM JUSTIFY</p>
+        <div id="justificado">
+            <p>Este texto esta alinha a justify Mesmo com quebras de linha, ele continua justify. Vamos ver mais exemplos de textos, isso são exemplos de texto e continuam alinhado a justify Veja, ainda alinha a justify. </p>  
+        </div>
+
+        <!---------------- 2. REFERENTE A PARTE SOBRE O ALINHAMENTO DA ULTIMA LINHA DO TEXTO  ----------->
+        <br> 
+        <hr>
+        <h2> ALINHAMENTO DA ULTIMA LINHA DE UM TEXTO </h2>
+        <p>Ultima linha aliada a esquerda: </p>
+        <div id="linha_esquerda">
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit enim in cubilia, vulputate diam nibh dictum maecenas nunc magnis nostra per, nulla nisi eu posuere volutpat mi suspendisse turpis rutrum. Euismod sit suspendisse tristique hendrerit enim varius felis interdum pharetra eros fusce ac ligula</p>
+        </div>
+        <br>
+        <p>Ultima linha alinha ao centro: </p>
+        <div id="linha_centro">
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit enim in cubilia, vulputate diam nibh dictum maecenas nunc magnis nostra per, nulla nisi eu posuere volutpat mi suspendisse turpis rutrum. Euismod sit suspendisse tristique hendrerit enim varius felis interdum pharetra eros fusce ac ligula</p>
+        </div>
+        <br>
+        <p>Ultima linha alinhada a direita</p>
+        <div id="linha_direita">
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit enim in cubilia, vulputate diam nibh dictum maecenas nunc magnis nostra per, nulla nisi eu posuere volutpat mi suspendisse turpis rutrum. Euismod sit suspendisse tristique hendrerit enim varius felis interdum pharetra eros fusce ac ligula</p>
+        </div>
+
+        <!------------------------------3. ALTERANDO A DIREÇÃO DE UM TEXTO ------------------------>
+        <br>
+        <hr>
+        <h2>ALTERANDO A DIREÇÃO DE UM TEXTO </h2>
+
+
+
+    </body>
+
+
+</html>
