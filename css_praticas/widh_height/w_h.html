@@ -5,11 +5,43 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        
+        <style>
+            *{
+                font-family:Arial, Helvetica, sans-serif;
+                box-sizing:border-box; 
+            }
 
+            body{
+                margin:0; 
+            }
+
+            #largura_maxima{
+                max-width:300px; 
+                width: 50%; 
+                height: 200px; 
+                background-color: red; 
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #largura_minima{
+                min-width: 400px; 
+                width: 40%; 
+                height:200px; 
+                background-color: red; 
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
     </head>
 
-    <body>
-        
+    <body>  
+        <h1>Width e Height</h1>
+        <p>O elemento a seguir tem uma lagura maxima de 300px <br> e um width de 40%, ou seja, o elemento esta sempre a 40% do seu elemento pai, porem se nesse esticamento, <br> O elemento chegar a 400px ele para de se esticar</p>
+        <br>
+        <div id="largura_maxima"></div>
+        <br>
+        <p>O elemento a seguir tem uma largura minima de 40%, ou seja, a lagura maxima é indefinida, de acordo com o tamanho do elemento pai<br>porem ao diminuir a tela, o elemento fica no minimo com o tamanho de 400px do elemento </p>
+        <div id="largura_minima"></div>
     </body>
 </html>
