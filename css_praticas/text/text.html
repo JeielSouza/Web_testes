@@ -82,7 +82,29 @@
             }
 
              /*====== 3. ALTERANDO A DIREÇÃO DE UM TEXTO ============*/
+            .invertendo_caixa{
+                width: 300px;
+                height: 400px;
+                border: 2px solid black; 
+                text-align: left;
+            }
 
+            .invertendo_texto p{
+                direction: rtl; 
+                unicode-bidi: bidi-override; 
+            }
+
+            /*====== 4. ALINHADORES VERTICAIS ============*/
+            #alinhamento_vertical{
+                vertical-align:baseline ;
+            }
+
+            #alinhamento_sub
+            {
+                vertical-align:sub;
+            }
+            
+            
 
         </style>
     </head>
@@ -93,6 +115,8 @@
         <h3 id="fundo">Esse elemento tem cor de fundo preta e cor branca</h3>
         <br>
         <hr>
+
+        
         <!---------------- 1. REFERENTE A PARTE SOBRE O ALINHAMENTO DO TEXTO ----------->
         <h2>Veremos agora os alimhamentos horizontais em forma de papel (como se fosse o word) </h2>
         <p>TEXTO ALINHADO A ESQUERDA</p>
@@ -136,11 +160,30 @@
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit enim in cubilia, vulputate diam nibh dictum maecenas nunc magnis nostra per, nulla nisi eu posuere volutpat mi suspendisse turpis rutrum. Euismod sit suspendisse tristique hendrerit enim varius felis interdum pharetra eros fusce ac ligula</p>
         </div>
 
-        <!------------------------------3. ALTERANDO A DIREÇÃO DE UM TEXTO ------------------------>
+        <!------------------------------3. ALTERANDO A DIREÇÃO DE UM TEXTO ----------------------------->
         <br>
         <hr>
         <h2>ALTERANDO A DIREÇÃO DE UM TEXTO </h2>
+        <p>O texto abaixo esta coma  direção alterada, as letras se posicionam da direta para esquerda</p>
+        <div class="invertendo_caixa invertendo_texto">
+            <p>Esse texta esta escrito totalmente ao contraio. </p>
+        </div>
 
+        
+        <!------------------------------4. ALINHADORES VERTICAIS ----------------------------->
+        <br>
+        <hr>
+        <h2>Alinhadores verticais</h2>
+        <p>O texto abaixo, a figura rosa esta alinhada em relação ao texto a seguir dela, a linha base (igual)</p>
+        <div>
+            <p> A qui <img src="img/rosa.png" title="rosa" id="alinhamento_vertical"> Esse elemento rose se posiciona a baseline, ou seja, na linha base desse texto</p>
+        </div>
+
+        <p>A figura rosa agora se alinha de forma subcrita ao texto ( abaix ) </p>
+        <div>
+            <p>A qui <img src="img/rosa.png" title="rosa" id="alinhamento_sub"> Esse elemento rose se posiciona a baseline, ou seja, na linha base desse texto</p>
+        </div>
+        
 
 
     </body>
