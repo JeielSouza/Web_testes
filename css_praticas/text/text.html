@@ -99,11 +99,15 @@
                 vertical-align:baseline ;
             }
 
-            #alinhamento_sub
-            {
+            #alinhamento_sub {
                 vertical-align:sub;
             }
             
+            #alinhamento_super{
+                vertical-align: super;
+            }
+        
+
             
 
         </style>
@@ -174,14 +178,18 @@
         <br>
         <hr>
         <h2>Alinhadores verticais</h2>
-        <p>O texto abaixo, a figura rosa esta alinhada em relação ao texto a seguir dela, a linha base (igual)</p>
+        <h3>O texto abaixo, a figura rosa esta alinhada em relação ao texto a seguir dela, a linha base (igual)</h3>
         <div>
             <p> A qui <img src="img/rosa.png" title="rosa" id="alinhamento_vertical"> Esse elemento rose se posiciona a baseline, ou seja, na linha base desse texto</p>
         </div>
 
-        <p>A figura rosa agora se alinha de forma subcrita ao texto ( abaix ) </p>
+        <h3>A figura rosa agora se alinha de forma subcrita ao texto ( abaix ) </h3>
         <div>
             <p>A qui <img src="img/rosa.png" title="rosa" id="alinhamento_sub"> Esse elemento rose se posiciona a baseline, ou seja, na linha base desse texto</p>
+        </div>
+        <h3>A figura rosa agora esta acima do texto</h3>
+        <div>
+            <p>A qui  <img src="img/rosa.png" title="rosa" id="alinhamento_super"> Esse elemento se econtra acima do texto </p>
         </div>
         
 
