@@ -107,7 +107,35 @@
                 vertical-align: super;
             }
         
+            /*====== 5. DECORANDO TEXTO COM LINHA ============*/
 
+            #linha_acima{
+                text-decoration-line: overline; 
+            }
+
+            #linha_meio{
+                text-decoration-line: line-through; 
+            }
+            
+            #linha_abaixo{
+                text-decoration-line:underline; 
+            }
+
+            #linha_cima_cor{
+                text-decoration-color:red;
+                text-decoration-line: overline;
+            }
+
+            #linha_meio_cor{
+                text-decoration-color:aqua; 
+                text-decoration-line:line-through;
+            }
+
+            #linha_abaixo_cor{
+                text-decoration-color: magenta; 
+                text-decoration-line: underline;
+
+            }
             
 
         </style>
@@ -183,7 +211,7 @@
             <p> A qui <img src="img/rosa.png" title="rosa" id="alinhamento_vertical"> Esse elemento rose se posiciona a baseline, ou seja, na linha base desse texto</p>
         </div>
 
-        <h3>A figura rosa agora se alinha de forma subcrita ao texto ( abaix ) </h3>
+        <h3>A figura rosa agora se alinha de forma subcrita ao texto ( abaixo ) </h3>
         <div>
             <p>A qui <img src="img/rosa.png" title="rosa" id="alinhamento_sub"> Esse elemento rose se posiciona a baseline, ou seja, na linha base desse texto</p>
         </div>
@@ -191,7 +219,23 @@
         <div>
             <p>A qui  <img src="img/rosa.png" title="rosa" id="alinhamento_super"> Esse elemento se econtra acima do texto </p>
         </div>
-        
+        <!------------------------------5. DECORANDO TEXTO COM LINHAS ----------------------------->
+        <hr>
+        <br>
+        <h1>LINHAS DE DECORAÇÃO</h1>
+        <h3>Os textos abaixo tem decoração de linha: acima, no meio, abaixo</h3>
+        <div>
+            <p id="linha_acima">Este texto tem uma linha acima como decoração</p>
+            <p id="linha_meio">Este texto tem uma linha no meio dele</p>
+            <p id="linha_abaixo">Este texto tem uma linha abaixo dele</p>
+        </div>
+        <h3>Mudando as cores abaixo das decorações</h3>
+        <div>
+            <p id="linha_cima_cor">Esse texto tem uma linha em cima adicionado a uma cor</p>
+            <p id="linha_meio_cor">Esse texto tem uma linha no meio porem com uma cor adicionada</p>
+            <p id="linha_abaixo_cor">Esse texto tem uma linha abaixo porém com uma cor adicionada</p>
+        </div>
+
 
 
     </body>
