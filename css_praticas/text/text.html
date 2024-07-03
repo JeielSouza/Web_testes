@@ -153,7 +153,40 @@
             #retira_estilo{
                 text-decoration:none; 
             }
+
+            /*====== 6. TRANFORMANDO UM TEXTO ============*/
+            #menusculo{
+                text-transform:lowercase;
+            }
+
+            #maiusculo{
+                text-transform:uppercase; 
+            }
+
+            #primeira_letra{
+                text-transform:capitalize; 
+            }
             
+            /*====== 7. RECUO DA PRIMEIRA LINHA ============*/
+            .caixa_recuo_linha{
+                width: 300px;
+                height: 400px;
+                border: 2px solid black;
+            }
+
+            .recuo_linha p{
+                text-indent:40px; 
+            }
+
+            /*====== 8. ESPAÇAMENTO ENTRE LETRAS DE UM TEXTO============*/
+            #espacamento_letras{
+                letter-spacing: 20px; 
+            }
+
+            /*====== 9. ALTURA DA LINHA ============*/
+            #altura_linha{
+                line-height:50px; 
+            }
 
         </style>
     </head>
@@ -265,10 +298,49 @@
         <div>
             <a href="https://www.youtube.com" id="retira_estilo" >LINK PARA O YOUTUBE</a>
         </div>
+          <!------------------------------6. TRANSFORMAÇÃO DE UM TEXTO  ----------------------------->
+        <hr>
+        <br>
+        <h1>TRANSFORMAÇÃO DE TEXTO: Capitalize, Uppercase, Lowercase (Maiusuclo, menusculo, primeira letra maiuscula)</h1>
+        <h3>O texto abaixo esta em maisculo mais o estilo esta mudando o mesmo para menusculo</h3>
+        <div>
+            <p id="menusculo">A CASA DO SEU JOÃO É AZUL</p>
+        </div>
+        <h3>O texto abaixo esta em menusculo, mais o estilo o modifica para maiusculo</h3>
+        <div>
+            <p id="maiusculo">eu sou originalmente menusculo</p>
+        </div>
+        <h3>O texto a seguir esta escrito em menusculo, porém o estilo vai modificalo para que toda a primeira letra de cada palavra seja maiuscula</h3>
+        <div>
+            <p id="primeira_letra">eu orginalmente sou maisculo mas o estilo altera as minhas primeiras letras.</p>
+        </div>
 
+        <!------------------------------7. RECUANDO A PRIOMEIRA LINHA DO TEXTO  ----------------------------->
+        <br>
+        <hr>
+        <h1>RECUO DA PRIMEIRA LINHA DE UM TEXTO</h1>
+        <h3>O texto a seguir tem a sua primeira linha recuada, como em uma redação</h3>
+        <div class="caixa_recuo_linha recuo_linha">
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit enim in cubilia, vulputate diam nibh <br>dictum maecenas nunc magnis nostra per,<br> nulla nisi eu posuere volutpat mi suspendisse turpis rutrum. Euismo<br> sit suspendisse tristique hendrerit enim varius felis interdum pharetra eros fusce ac ligula</p>
+        </div>
 
+        <!------------------------------8. ESPAÇAMENTO ENTRE LETRAS DE UM TEXTO  ----------------------------->
+        <br>
+        <hr>
+        <h1>ESPAÇAMENTO ENTRE AS LETRAS DE UM TEXTO</h1>
+        <h3>O texto abaixo tem um  espçamento de 20px entre as letras.</h3>
+        <div>
+            <p id="espacamento_letras">ADVOCACIA</p>
+        </div>
 
-
+         <!------------------------------9.  ALTURA DA LINHA DE UM TEXTO  ----------------------------->
+        <br>
+        <hr>
+        <h1>DEFININDO ALTURA DA LINHA DE UM TEXTO</h1>
+        <h3>O texto abaixo tem altura de 50px de cada linha dentro do propio paragrafo.</h3>
+        <div>
+            <p id="altura_linha">Lorem ipsum dolor sit amet consectetur adipiscing elit enim in cubilia, vulputate diam nibh <br>dictum maecenas nunc magnis nostra per,<br> nulla nisi eu posuere volutpat mi suspendisse turpis rutrum. Euismo<br> sit suspendisse tristique hendrerit enim varius felis interdum pharetra eros fusce ac ligula</p>
+        </div>
 
     </body>
 
