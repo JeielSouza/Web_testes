@@ -14,7 +14,7 @@
                 margin:0;
             }
 
-            /*---- ESTILO A DIFERENTES ESTADOS DE UM LINK----*/
+            /*---- 1. ESTILO A DIFERENTES ESTADOS DE UM LINK----*/
             #licado:link{
                 color:red; 
                 text-decoration:none;
@@ -35,17 +35,46 @@
                 text-decoration:none;
             }
 
+            /*---- 2. MUDANDO ESTILO DO CURSOR AO PASSAR O MOUSE POR CIMA----*/
+            a.esperar:hover{
+                cursor:wait; 
+                color:brown;
+                font-size:30px;
+                font-weight:bold; 
+            }
+
+            a.cross:hover{
+                cursor:crosshair;
+                color:brown;
+                font-size:30px;
+                font-weight:bold;
+            }   
+
+            a.sem_estilo{
+                text-decoration:none; 
+            }
+
         </style>
      </head>
 
     <body>
-
+        <!-- 1. ADICIONADOS ESTILOS COM ESTADOS A UM LINK -->
         <h1>LINKS e suas estilizações</h1>
-        <h2>Abaixo exemplos de links: link, active, hover, visited </h2>
+        <h2>1. Abaixo exemplos de links: link, active, hover, visited </h2>
         <a href="http://www.youtube.com.br" id="licado">LINK</a><br>
         <a href="http://www.youtube.com.br" id="ativo">ACTIVE</a><br>
         <a href="http://www.youtube.com.br" id="mouse">HOVER</a><br>
         <a href="http://www.youtube.com.br" id="visitado ">VISITED</a><br>
+        	
+        <br>
+        <hr>
+
+        <!-- 2. MUDANDO O CURSO -->
+        <h2>2. Aplicando estilo de cursor ao passar o mouse por um link</h2>
+        <a href="https://www.google.com" target="_blank" class="esperar sem_estilo"> WAIT</a> <br>
+        <a href="https://www.google.com" target="_blank" class="cross sem_estilo"> CROSSHAIR</a>
+        
+
 
         
     </body>
