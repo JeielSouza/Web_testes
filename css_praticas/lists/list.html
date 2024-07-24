@@ -9,14 +9,30 @@
                 font-family:Arial, Helvetica, sans-serif;
                 box-sizing:border-box;
             }
-
             body{
                 margin:0;
             }
 
+            /*2. Estilizando os marcadores*/
+            #circulo{
+                list-style-type: circle; 
+            }
+            #quadrado{
+                list-style-type: square; 
+            }
+            #romam{
+                list-style-type: upper-roman; 
+            }
+            #lower{
+                list-style-type: lower-alpha; 
+            }
+
+            /*3. IMAGENS EM MARCADORES*/
+            .mark-image li{
+                list-style-image: url("img/rosa.png");
+            }
         </style>
     </head>
-
     <body>
         <h1>ESTILIZANDO LISTAS</h1>
         <h2>1. Tipos de listas </h2>
@@ -37,8 +53,34 @@
                 <li>Gato</li>
             </ul>
         </div>
-
+        <br>
+        <hr>
+        <h2>2. ESTILIZANDO O MARCADOR PARA LISTAS NÃO ORDENADAS</h2>
+        <h3>2.1. Abaixo veremos varios estilos aplicados a listas</h3>
+        <div>
+            <ul>
+                <p>Para listas não ordenadas</p>
+                <li id="circulo">Circulo</li>
+                <li id="quadrado">Quadrado</li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <ol>
+                <p>Para listas ordenadas</p>
+                <li id="romam">Romana</li>
+                <li id="lower">Lower-Alpha</li>
+            </ol>
+        </div>
+        <br>
+        <hr>
+        <h2>3. COLOCANDO IMAGENS EM MARCADORES</h2>
+        <div>
+            <ul class="mark-image">
+                <li>Marcadores</li>
+                <li>Estão</li>
+                <li>Imagens</li>
+            </ul>  
+        </div>
     </body>
-
-
 </html>
