@@ -33,13 +33,22 @@
             }
 
             /*4. COLOCANDO MARCADORES DENTRO OU FORA DA CAIXA*/
-            .caixa_4{
-                width:200px; 
-                height:100px; 
+            #marcador_fora li{
+                list-style-position:outside;
+                width:200px;
+                background-color: grey; 
+            }
+
+            #marcador_dentro li{
+                list-style-position:inside; 
+                width:200px;
                 background-color:grey; 
             }
-            .marcador_fora li{
-                list-style-position:outside;
+            /*5. ZERANDO ESTILOS DA LISTA*/
+            #reset li{
+                list-style-type:none; 
+                margin:0; 
+                padding:0; 
             }
 
         </style>
@@ -100,17 +109,28 @@
 
         <h2>4. COLOCANDO MARCADORES DENTRO OU FORA DA CAIXA DE CONTEUDO</h2>
         <div>
-            <ul class="caixa_4 marcador_fora">     ??????????? não funcional 
+            <ul id="marcador_fora">   
                 <li>Teste 1</li>
                 <li>Teste 2</li>
                 <li>Teste 3</li>
             </ul>
         </div>
         <div>
-            <ul>
+            <ul id="marcador_dentro">
                 <li>Teste 1</li>
                 <li>Teste 2</li>
                 <li>Teste 3</li>
+            </ul>
+        </div>
+        <hr>
+        <br>
+        <h2>5. ZERANDO OS ESTILOS DE UMA LISTA</h2>
+        <div>
+            <ul id="reset">
+                <li>Teste 1</li>
+                <li>Teste 2</li>
+                <li>Teste 3</li>
+                <li>Teste 4</li>
             </ul>
         </div>
     </body>
