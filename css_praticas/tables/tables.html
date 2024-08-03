@@ -37,9 +37,52 @@
             }
 
             /*3. COLAPSANDO AS BORDAS DE UMA TABELA*/
-            #colapso th{
+            #colapso table, #colapso th, #colapso td{
+                border: 2px solid black; 
+                border-collapse:collapse; 
+                padding: 5px;
+            }
+
+            /*4. ALINHANDO RAPIDAMENTE OS ELEMENTOS DE UMA TABELA*/
+            #centro table{
+                text-align:center; 
+                width:100%; 
+                border: 1px solid black;
+                border-collapse:collapse; 
+            }
+
+            #centro th{ 
+                border: 1px solid black;
+                border-collapse:collapse; 
+            }
+
+            #centro td{
+                border: 1px solid black;
+                border-collapse:collapse; 
+            }
+            /*5. ALINHAMENTO VERTICAL*/
+            #vertical table{
+                width:100%;
+                border:1px solid black; 
+                border-collapse: collapse;
+
+            }
+
+            #vertical th{
+                border: 1px solid black; 
+                border-collapse: collapse; 
                 
             }
+
+            #vertical td{
+                text-align: right; 
+                vertical-align:bottom; 
+                border:1px solid black; 
+                border-collapse: collapse; 
+                height: 50px;
+            }
+
+            
 
             
         </style>
@@ -99,8 +142,97 @@
         </div>
         <br>
         <hr>
-        
-        
+        <h2>3. COLAPSO DE BORDA</h2>
+        <p>A seguir vamos colapsar as bordas de uma tabela, deixando elas normalmente em linhas.</p>
+        <div id="colapso" >
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Sexo</th>
+                </tr>
+                <tr>
+                    <td>Lina</td>
+                    <td>12</td>
+                    <td>feminino</td>
+                </tr>
+                <tr>
+                    <td>Adolf</td>
+                    <td>20</td>
+                    <td>Masculino</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>78</td>
+                    <td>Feminino</td>
+                </tr>
+
+
+            </table>
+        </div>
+        <br>
+        <hr>
+        <h2>4. ALINHANDO ELEMENTOS AO CENTRO</h2>
+        <p>A seguir vamos alinhar ao centro de forma facil todos os elementos da tabela. </p>
+        <div id="centro">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Sexo</th>
+                </tr>
+                <tr>
+                    <td>Lina</td>
+                    <td>12</td>
+                    <td>feminino</td>
+                </tr>
+                <tr>
+                    <td>Adolf</td>
+                    <td>20</td>
+                    <td>Masculino</td>
+                </tr>
+                <tr>
+                    <td>Ana</td>
+                    <td>78</td>
+                    <td>Feminino</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <br>
+        <h2>5. ALINHAMENTO VERTICAL DOS ITENS DE UMA TABELA</h2>
+        <p>A tabela a seguir tem o alinhamento de seus itens TD  right e bottom. </p>
+        <div id="vertical">
+            <table>
+                <tr>
+                    <th>FRUTA</th>
+                    <th>QUANTIDADE</th>
+                    <th>PREÇO</th>
+                </tr>
+                <tr>    
+                    <td>Abacate</td>
+                    <td>32</td>
+                    <td>R$ 42,00</td>
+                </tr>
+                <tr>
+                    <td>Laranja</td>
+                    <td>341</td>
+                    <td>R$ 512,00</td>
+                </tr>
+                <tr>
+                    <td>Maçã</td>
+                    <td>12</td>
+                    <td>R$ 3,00</td>
+                </tr>
+
+            </table>
+        </div>
+
+
+
+
+
+
 
     </body>
 
