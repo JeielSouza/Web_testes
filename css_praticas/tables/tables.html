@@ -82,7 +82,69 @@
                 height: 50px;
             }
 
+            /*6. COLOCANDO BORDA APENAS NA PARTE INFERIOR DE UMA TABELA*/
+            #abaixo table{
+                width: 70%; 
+                border-collapse: collapse;
+                margin: auto;
+            }
             
+            #abaixo th{
+                border-bottom:1px solid black;
+                border-collapse: collapse;
+                text-align: center; 
+            }
+            
+            #abaixo td{
+                border-bottom:1px solid black;
+                border-collapse: collapse;
+                text-align: center;  
+            }
+
+            /*7. COLOCANDO EFEITO AO PASSAR POR CIMA*/
+            #sobre table{
+                width:70%; 
+                border-collapse: collapse; 
+                margin: auto; 
+            }
+
+            #sobre th{
+                border: 1px solid black; 
+                border-collapse:collapse; 
+            }
+
+            #sobre td{
+                border-collapse:collapse; 
+                text-align: center; 
+            }
+
+            #sobre tr:hover{
+                background-color: lightslategray;
+            }
+            
+            /*8. ADICIONANDO EFEITO LISTRADO A TABELA */
+            #listrado table{
+                width: 70%; 
+                margin: auto; 
+                border-collapse:collapse; 
+            }
+
+            #listrado th{
+                border:2px solid black; 
+                border-collapse: collapse;  
+
+            }
+
+            #listrado td{
+                border-collapse:collapse; 
+                text-align:center; 
+                
+            }
+
+            #listrado tr:nth-child(even){
+                background-color: lightsteelblue;
+            }
+
 
             
         </style>
@@ -227,13 +289,149 @@
 
             </table>
         </div>
-
-
-
-
-
-
-
+        <hr>
+        <br>
+        <h2>6. APLICANDO ESTILO APENAS A PARTE DE BAIXO DA TABELA </h2>
+        <div id="abaixo">
+            <table>
+                <tr>
+                    <th>Produto</th>
+                    <th>Categoria</th>
+                    <th>Preço</th>
+                </tr>
+                <tr>
+                    <td>Abacate</td>
+                    <td>Fruta</td>
+                    <td>R$ 32.00</td>
+                </tr>
+                <tr>
+                    <td>Morango</td>
+                    <td>Fruta</td>
+                    <td>R$ 54.00</td>
+                </tr>
+                <tr>
+                    <td>Aspargo</td>
+                    <td>Leguminosa</td>
+                    <td>R$ 102.00</td>                    
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <br>
+        <h2>7. FAZENDO O EFEITO DE MUDAR A COR DE UMA LINHA AO PASSAR O MOUSE POR CIMA</h2>
+        <div id="sobre">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Cargo</th>
+                    <th>Salario</th>
+                </tr>
+                <tr>
+                    <td>Jurandir </td>
+                    <td>Auxiliar Adm</td>
+                    <td>R$ 1560,00</td>
+                </tr>
+                <tr>
+                    <td>Carol</td>
+                    <td>Gerente</td>
+                    <td>R$ 3500,00</td>
+                </tr>
+                <tr>
+                    <td>James</td>
+                    <td>Diretor</td>
+                    <td>R$ 6200,00</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <hr>
+        <h2>8. ADICIONANDO EFEITO LISTRADO A TABELA</h2>
+        <div id="listrado">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Sexo</th>
+                </tr>
+                <tr>
+                    <td>Jurandir</td>
+                    <td>54</td>
+                    <td>Masculino</td>
+                </tr>
+                <tr>
+                    <td>Vanessa</td>
+                    <td>21</td>
+                    <td>Feminino</td>
+                </tr>
+                <tr>
+                    <td>Thompson</td>
+                    <td>25</td>
+                    <td>Masculino</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <br>
+        <h2>9. APLICANDO RESPONSIVIDADE A UMA TABELA</h2>
+        <div style="overflow-x:auto;">
+            <table>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                    <th>Points</th>
+                </tr>
+                <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>94</td>
+                </tr>
+                <tr>
+                    <td>Adam</td>
+                    <td>Johnson</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                    <td>67</td>
+                </tr>
+            </table>
+        </div>
     </body>
-
 </html>
