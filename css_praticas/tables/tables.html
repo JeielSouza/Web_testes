@@ -145,6 +145,27 @@
                 background-color: lightsteelblue;
             }
 
+            /*9. TABELA RESPONSIVA*/
+            #resp table{
+                width:1000px; 
+                border-collapse:collapse; 
+                margin: auto; 
+            }
+
+            #resp th{
+                border: 1px solid black; 
+                border-collapse:collapse; 
+            }
+
+            #resp td{
+                text-align: center; 
+                border-collapse: collapse; 
+            }
+
+            #resp tr:nth-child(even){
+                background-color: rgb(200, 200, 200);
+            }
+
 
             
         </style>
@@ -373,7 +394,7 @@
         <hr>
         <br>
         <h2>9. APLICANDO RESPONSIVIDADE A UMA TABELA</h2>
-        <div style="overflow-x:auto;">
+        <div style="overflow-x:auto;" id="resp">
             <table>
                 <tr>
                     <th>First Name</th>

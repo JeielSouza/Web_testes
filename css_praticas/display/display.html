@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Display</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                font-family:Arial, Helvetica, sans-serif ;
+                box-sizing:border-box;
+            }
+
+            body{
+                margin:0; 
+            }
+
+            /*Subtela de teste*/
+            .tela{
+                width:100%;
+                height:500px;
+                border:2px solid black; 
+            }
+
+            /*1. DISPLAY: NONE; */
+            .limpa_lista ul{
+                list-style-type:none; 
+            }
+
+            .none{
+                display: none;
+                width:50px; 
+                height:50px;
+                border:1px solid black;
+            }
+
+            .none:hover{
+                display:block;
+                width:150px; 
+                height:150px;
+                border:1px solid black;
+            }
+
+            .que_passe{
+                background-color:black; 
+                color:white; 
+                width:250px;
+                text-align: center; 
+                padding:3px; 
+            }
+
+            .que_passe:hover + ul{
+                display: block;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align:center; ">DISPLAY</h1>
+        <h2>1. INLINE</h2>
+        <p>A seguir veremos elementos que são naturalmente INLINES<br>Ou seja, se posionão um ao lado do outro </p>
+        <div>
+            <a href="www.youtube.com">Links</a><a href="www.youtube.com">São</a><a href="www.youtube.com">Inlines</a>
+            <span> Spans</span> <span> São</span> <span> Inlines</span>
+            <img src="img/tubas.jpg" style="width:200px; height:200px; "> <img src="img/tubas.jpg" style="width:200px; height:200px; "> <img src="img/tubas.jpg" style="width:200px; height:200px; ">
+        </div>
+    </body>
+    <br>
+    <hr>
+    <h2>2. BLOCK</h2>
+    <P>Abaixo veremos elementos que são naturalmente block, ou seja, ficam um abaixo do outro em exibição. </P>
+    <p>P é um exemlo</p>
+    <div>div é um exemplo </div>
+    <footer>footer é um exemplo</footer>
+    <hr>
+    <br>
+    <h2>3. DISPLAY: none; </h2>
+    <div class="tela">
+        <div class="limpa_lista">
+            <p class="que_passe">PASSE O MOUSE PARA VER</p>
+            <ul class="none">
+                <li>Modelos</li>
+                <li>Novidades</li>
+                <li>Promosoes</li>
+            </ul>
+        </div>
+    </div>
+</html>
