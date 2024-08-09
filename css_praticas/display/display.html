@@ -10,7 +10,7 @@
                 box-sizing:border-box;
             }
 
-            body{
+            body, html{
                 margin:0; 
             }
 
@@ -21,37 +21,74 @@
                 border:2px solid black; 
             }
 
-            /*1. DISPLAY: NONE; */
-            .limpa_lista ul{
-                list-style-type:none; 
-            }
-
-            .none{
-                display: none;
-                width:50px; 
-                height:50px;
-                border:1px solid black;
-            }
-
-            .none:hover{
-                display:block;
-                width:150px; 
-                height:150px;
-                border:1px solid black;
-            }
-
-            .que_passe{
+            /*3. DISPLAY: NONE; */
+            .botao{
+                width:100px; 
+                height:40px;
                 background-color:black; 
                 color:white; 
-                width:250px;
-                text-align: center; 
-                padding:3px; 
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top:10px;
+                padding-bottom: 10px;
+                text-align:center; 
+                font-weight: bold; 
+                letter-spacing: 2px;
             }
 
-            .que_passe:hover + ul{
-                display: block;
+            .botao:hover{
+                width:100px; 
+                height:40px;
+                background-color:rgb(50, 50, 50); 
+                color:white; 
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top:10px;
+                padding-bottom: 10px;
+                text-align:center; 
+                font-weight: bold; 
+                letter-spacing: 2px;
             }
 
+            .botao:hover + div{
+                display:block;
+                color: red;
+            }
+
+            .caixa{
+                width:100px; 
+                height:100px; 
+                background-color:red; 
+                display:none; 
+            }
+            /*4. ALTERAÇÃO DE EXIBIÇÃO DO ELEMENTO*/
+            .embutido li{
+                list-style:none; 
+                display:inline; 
+                margin-right:12px;
+        
+            }
+            .embutido{
+                margin:0; 
+                padding:0;
+            }
+
+            .bloco a{
+                display:block; 
+            }
+            /*5. HIDDENS*/
+            .caixas{
+                width:100px; 
+                height:100px; 
+                background-color:red; 
+                margin-bottom: 10px;
+            }
+
+            .hidden{
+                visibility:hidden; 
+            }
+
+            
 
         </style>
     </head>
@@ -74,15 +111,42 @@
     <footer>footer é um exemplo</footer>
     <hr>
     <br>
+
     <h2>3. DISPLAY: none; </h2>
+    <p>No exemplo a baixo o display esta em none, porem  <br> ao passar o mouse por cima do "veja" o quadrado que esta em diplay:none; aparece. </p>
     <div class="tela">
-        <div class="limpa_lista">
-            <p class="que_passe">PASSE O MOUSE PARA VER</p>
-            <ul class="none">
-                <li>Modelos</li>
-                <li>Novidades</li>
-                <li>Promosoes</li>
-            </ul>
+        <p class="botao">VEJA</p>
+        <div class="caixa"> 
         </div>
     </div>
+    <br>
+    <hr>
+
+    <h2>4. ALTERANDO EXIBIÇÃO DE ELEMENTOS</h2>
+    <p>Um comum exemplo é o elemento li(para alterar uma lista), li naturalmente são elementos de blocos <br> e no exemplo abaixo vamos deixar ele como elemento inline  </p>
+    <div>
+        <ul class="embutido">
+            <li>Macaco</li>
+            <li>Bana</li>
+            <li>Fruta</li>
+        </ul>    
+    </div>
+    <br>
+    <p>Nesse proximo exemplo, vamos alterar a exibição de links, que são naturalmente são inline</p>
+    <div class="bloco">
+        <a href="http://www.youtube.com.br">LINK</a>
+        <a href="http://www.youtube.com.br">LINK</a>
+        <a href="http://www.youtube.com.br">LINK</a>
+    </div>
+    <br>
+    <hr>
+    <h2>5. APLICANDO HIDDEN A ELEMENTOS</h2>
+    <p>Existem difereça entre display none e visibility hidden, <br> Como vamos ver, o display none some com todo o elemento e a pagina segue o fluxo, já o hidden, <br> vai deixar um espaço em branco daonde era o elemento.<br>
+    <br>Vejamos no exemplo, 3 caixas, a do meio recebe visibility: hidden; 
+    <div>
+        <div class="caixas"></div>
+        <div class="caixas hidden"></div>
+        <div class="caixas"></div>
+    </div>
+    </p>
 </html>
