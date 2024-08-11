@@ -3,7 +3,7 @@
     <head>
         <title>Position</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">s
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             *{
                 box-sizing: border-box; 
@@ -15,10 +15,48 @@
                 padding:0; 
             }
 
+            /*1. ESTATIC*/
+            .caixa{
+                width:100px;
+                height:100px; 
+                background-color:red; 
+                position:static; 
+            }
+            /*2. RELATIVE*/
+            .caixa_relativa{
+                width:100px;
+                height:100px; 
+                background-color:red; 
+                position:relative; 
+                top:20px;
+                left:30px;
+                right:40px;
+                bottom:10px; 
+
+            }
+
+            .tela_1{
+                width:1000px;
+                height:200px;
+                border:2px solid black; 
+            }
         </style>
     </head>
     <body>
         <h1 style= "text-align:center;">POSITION</h1>
+        <br>
+        <h2>1. STATIC</h2>
+        <p>Elementos posicionados naturalmente de acordo com o fluxo da pagina<br>nao afetados por top, bottom, right, left</p>
+        <div class="caixa"></div>
+        <br>
+        <hr>
+        <h2>2. RELATIVE</h2>
+        <p>Faz com que o elemento siga normalmente o fluxo da pagina porem <br> nesse caso ele pode ser modificado por top, left, middle, bottom</p>
+        <p>No exemplo a seguir a caixa esta dentro do seu pai div com 1000x1000 a 20px top 30 px left 40 px right 10 bottom/p>
+        <div class="tela_1">
+            <div class="caixa_relativa"></div>
+        </div>
+        
     </body>
 
 </html>
