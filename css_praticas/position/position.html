@@ -48,13 +48,33 @@
                 position:fixed; 
                 width:100px; 
                 height:50px; 
-                left:400px; 
+                left:80%; 
+                bottom:95%; 
+                right:0px;
                 text-align:center; 
                 font-weight: bold;
                 padding-top: 15px;
-                
-
             }
+
+            /*4. ABOSLUTE*/
+            .caixa_teste_absoluta{
+                width:1000px;
+                height:200px; 
+                border:2px solid black; 
+                position:relative;
+            }
+
+            .caixa_posicao_absoluta{
+                width: 100px;
+                height: 100px;
+                background-color:red; 
+                position:absolute; 
+                left:200px; 
+                bottom: 400px; 
+                top:30px;
+                right: 0;
+            }
+
         </style>
     </head>
     <body>
@@ -67,19 +87,26 @@
         <hr>
         <h2>2. RELATIVE</h2>
         <p>Faz com que o elemento siga normalmente o fluxo da pagina porem <br> nesse caso ele pode ser modificado por top, left, middle, bottom</p>
-        <p>No exemplo a seguir a caixa esta dentro do seu pai div com 1000x1000 a 20px top 30 px left 40 px right 10 bottom/p>
+        <p>No exemplo a seguir a caixa esta dentro do seu pai div com 1000x1000 a 20px top 30 px left 40 px right 10 bottom</p>
         <div class="tela_1">
             <div class="caixa_relativa"></div>
         </div>
         <hr>
         <br>
         <H2>3. FIXED</H2>
-        <p>Agora veremos o fixed, que retira o elemento no fluxo natural do elemento.
-            <br>Nautualmente ele vai inicar aonde deveria estar, porem quando chegar a ele, o mesmo vai ficar fixo durante a rolagem da pagina.  </p>
-        <div class="tela_1">
-           <div class="fixo">FIXED</div> 
+        <p>Vemos agora o exemplo de fixed. Ele sera posicionado de forma fixa aonde deveria ficar se for colocado em um container pai <br> Porém, no exemplo o elemento pai dele é o propio body. Ou seja, o elemento fica livre para ser posiconado fixo <br> e controlado pelo left, bottom, top, right, para seposicionar em qualquer lugar da tela.   
+            <br><br>Nesse exemplo, vemos o fixed posicionado do lado superior direito desse elemento.           
+        </p>
+        <div class="fixo">FIXED</div> 
+        <hr>
+        <br>
+        <h2>4. ABSOLUT</h2>
+        <p>Elementos absolut se posicionam dentro de elementos pais que sejam absolut ou relativa. Se ele não for filho <br> de nenhum desses ele vai se posicionar em relação ao seu pai html ou body. 
+        <br><br>No exemplo a baixo conseguimos colocar o quadrado vermelho na frente da cabeça do tubarão.  </p>
+        <div class="caixa_teste_absoluta">
+            <div class="caixa_posicao_absoluta"></div>
+            <img src="img/tubas.jpg" style="width:400px; height:200px; ">
         </div>
-
         
     </body>
 
