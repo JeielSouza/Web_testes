@@ -75,6 +75,24 @@
                 right: 0;
             }
 
+            /*5. STICKY */
+            .caixa_colada{
+                background-color:green; 
+                color:white; 
+                width:100px;
+                height:50px; 
+                text-align:center; 
+                padding-top:15px; 
+                font-weight:bold;
+                border: 2px dotted black; 
+                position: -webkit-sticky; 
+                position:sticky; 
+                top:0; 
+                left:500px; 
+
+
+            }
+
         </style>
     </head>
     <body>
@@ -83,6 +101,7 @@
         <h2>1. STATIC</h2>
         <p>Elementos posicionados naturalmente de acordo com o fluxo da pagina<br>nao afetados por top, bottom, right, left</p>
         <div class="caixa"></div>
+        <div class="caixa_colada">STICKY</div>
         <br>
         <hr>
         <h2>2. RELATIVE</h2>
@@ -107,6 +126,15 @@
             <div class="caixa_posicao_absoluta"></div>
             <img src="img/tubas.jpg" style="width:400px; height:200px; ">
         </div>
+        <hr>
+        <br>
+        <h2>5. STICKY</h2>
+        <p>Com o sticky, o elemento se comporta como um relative, ate que a rolagem atinja um determinado nivel
+            <br>dependendo de onde ele esteja em relacao ao seu elemento pai ou fluxo do documento. 
+            <br>
+            <br>
+            Nesse exemplo, elee vai se encontrar logo no inicio. Na parte sobre static. E vai se grudar quando ele encontar no top 0 da pagina. 
+        </p>
         
     </body>
 
