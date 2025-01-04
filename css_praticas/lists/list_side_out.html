@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Listas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                font-family:Arial, Helvetica, sans-serif;
+                box-sizing:border-box;
+            }
+            body{
+                margin:0;
+                padding:0; 
+            }
+
+
+            .inside li{
+                list-style-position:inside; 
+                background-color:pink; 
+                width:70px; 
+                margin-top:5px; 
+            }
+
+            .inside_caixa{
+                width:200px; 
+                height:100px; 
+                background-color:red;
+                padding-top:10px;
+
+            }
+
+
+            .outside li{
+                list-style-position:outside; 
+                background-color:pink; 
+                width:70px; 
+                margin-top:5px; 
+            }
+
+            .outside_caixa{
+                width:200px; 
+                height:100px; 
+                background-color:red;
+                padding-top:10px;
+
+            }
+
+           
+        </style>
+    </head>
+    <body>
+       <h1>Lista Outside</h1>
+       <ul class="inside inside_caixa">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+       </ul>
+
+
+       <h1>Lista Inside</h1>
+       <ul class="outside outside_caixa">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+    	 </ul>
+
+
+
+    </body>
+
+</html>
