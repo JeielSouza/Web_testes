@@ -19,14 +19,9 @@
             .borda_teste_1{
                 border: 1px solid black; 
                 width:100%;
-                border-collapse:collapse; 
                 min-width:800px; 
-            }
-            
-            
-            .borda_teste_1 tr{
-            	border: 1px solid black;  
-            
+                border-collapse:collapse; 
+
             }
             
             .borda_teste_1 th{
@@ -40,11 +35,20 @@
             	border: 1px solid black;  
                 text-align:center; 
             }
+
+            .borda_teste_1 tr:nth-child(odd){
+                background-color:blanchedalmond;
+            }
+
+
+     
+
             
         </style>
     </head>    
     <body>
     	<h1>Teste de Tabela</h1>
+
         <table class="borda_teste_1">
         	<tr>
             	<th>NOME</th>
@@ -56,6 +60,25 @@
             	<td> Jeiel </td>
                 <td> 32</td>
                 <td> 312</td>
+            </tr>
+
+            <tr>
+                <td>Ana</td> 
+                <td>15</td>
+                <td>35</td>
+            </tr>
+
+
+            <tr>
+                <td>Pricila</td>
+                <td>41</td>
+                <td>415</td> 
+            </tr>
+
+            <tr>
+                <td>Daniel</td>
+                <td>21</td>
+                <td>53</td>
             </tr>
             
         </table>
