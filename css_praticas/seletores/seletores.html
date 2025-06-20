@@ -60,33 +60,10 @@
 /*-------------------------------------PSEUDOCLASSES------------------------------------------------------*/
             /*hover - quando passamos o mouse por cima ele muda seu estilo autoamticamente*/
 
-            .but:hover 
-            {
-                font-size: 1.1em;
-                background-color: black ; 
-                color: white;
+            #ap_link:link{
+                color:yellow; 
             }
-
-            .teste_link:link 
-            {
-                color:red;
-            }
-
-            .teste_visited:visited
-            {
-                color:magenta;
-            }
-
-            .teste_hover:hover 
-            {
-                color:aqua;
-            }
-
-            .teste_active:active
-            {
-                color:brown; 
-            }
-            
+          
 /*------------------------------------PSEUDO ELEMENTS----------------------------------------*/
             #teste_primeira_letra::first-letter
             {
@@ -228,18 +205,10 @@
         <br>
         <h1>3- PESEUDOCLASS</h1>
 
-        <button type="button" class="but">TESTE</button>
-
-        <h2>Testando pseudoclass com links</h2>
-
-        <a href="http://www.youtube.com.br" target="_blank" class="teste_link">L I N K</a>
-        <p></p>
-        <a href="http://www.youtube.com.br" target="_blank" class="teste_visited">V I S I T E D</a>
-        <p></p>
-        <a href="http://www.youtube.com.br" target="_blank" class="teste_hover">H O V E R</a>
-        <p></p>
-        <a href="http://www.youtube.com.br" target="_blank" class="teste_active">A C T I V E</a>
-
+            <a href="https://www.youtube.com.br" id="ap_link">GOOGLE</a>
+            <a href="https://google.com.br" id="apenas_visited">GOOGLE</a>
+            <a href="https://google.com.br" id="apenas_hover">GOOGLE</a>
+            <a href="https://google.com.br" id="apenas_active">GOOGLE</a>
         <hr>
         <br>
 
