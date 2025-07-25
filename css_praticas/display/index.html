@@ -8,16 +8,140 @@
             *{
                 font-family:Helvetica, Arial, sans-serif;
                 box-sizing:border-box; 
+                white-space:normal; 
             }
-
             body{
                 margin:0; 
                 padding:0; 
+            }
+            .AlinhaRow{
+                border:1px solid red; 
+                width: 100%;
+                height: auto; 
+                display:flex; 
+                flex-direction:row;
+            }
+            .Caixa{
+                border:1px solid blue; 
+                border-radius:5px; 
+                width: 100px; 
+                height: 100px; 
+                padding: 10px; 
+                margin: 10px; 
+                background-color:black; 
+                padding:20px;
+                min-width:100px; 
+            }
+            .Caixa p{
+                text-align:center; 
+                vertical-align:baseline; 
+                color: white; 
+                font-weight:bold; 
+                padding:0; 
+            }
+            .AlinhaRowReverse{
+                width:100%; 
+                height:auto; 
+                border: 1px solid red; 
+                display:flex; 
+                flex-direction:row-reverse;  
+            }
+            .AlinhaWrap{
+                width:100%; 
+                height:auto; 
+                border:1px solid red; 
+                display:flex; 
+                flex-direction:row; 
+                flex-wrap:wrap; 
             }
         </style>
     </head>
     <body>
         <h1>DISPLAY</h1>
+        <hr>
+        <h3>1. Exemplos de Display:block; sendo eles header, footer, section, h1 a h6, p<br>
+        Podemos ver que esses elemento vão se pocisionar um abaixo do outro a seguir. 
+        </h3>
+        <header>Isso é um header</header>
+        <section>Isso é um section</section>
+        <h6>Isso é um h6</h6>
+        <p>Isso é um p</p>
+        <footer>Isso é um footer</footer>
+        <hr>
+        <h3>2. Abaixo podemos ver alguns exemplos de display:inline;, sendo eles o img, a, span</h3>
+        <img src="img/tubas.jpg" width="50px" height="50px">
+        <span>Isso é um span</span>
+        <a href="http://youtube.com"> Isso é um link</a>
+        <hr>
+        <h3>3. Abaixo vamos ver alguns exemplos de display:flex e as propiedades disponíveis para se utilizar com o flex box.</h3>
+        <h5>3.1. display:flex; flex-direction:row; vemos que os itens vão ficar alinhados horizontalmente, da esquerda para a direita, porém não se quebram e ficam um embaixo do outro caso não tenha espaço.</h5s>
+        <div class="AlinhaRow">
+            <div class="Caixa">
+                <p>Item 1</p>
+            </div>
+            <div class="Caixa">
+                 <p>Item 2</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 3</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 4</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 5</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 6</p>
+            </div>
+        </div>
+        <br>
+        <h5>3.2. display:flex; flex-direction:row-reverse; os elementos vão ser distribuidos no eixo horizontal, da direita para a esquerda.<h5>
+        <div class="AlinhaRowReverse">
+            <div class="Caixa">
+                <p>Item 1</p>
+            </div>
+            <div class="Caixa">
+                 <p>Item 2</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 3</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 4</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 5</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 6</p>
+            </div>
+        </div>
+        <br>
+        <h5>3.3. display:flex; flex-direction:row; flex-wrap: wrap; - Nesse caso os elementos serão dispostos no eixo horizontal, e vão quebrar ficando empilhados um abaixo do outro quando não couberem mais la largura disponível</h5>
+                <div class="AlinhaWrap">
+            <div class="Caixa">
+                <p>Item 1</p>
+            </div>
+            <div class="Caixa">
+                 <p>Item 2</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 3</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 4</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 5</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 6</p>
+            </div>
+        </div>
+
+
+
 
     </body>
 </html>
