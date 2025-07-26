@@ -27,9 +27,9 @@
                 width: 100px; 
                 height: 100px; 
                 padding: 10px; 
-                margin: 10px; 
+                margin:10px; 
                 background-color:black; 
-                padding:20px;
+                padding:40px 20px;
                 min-width:100px; 
             }
             .Caixa p{
@@ -38,6 +38,7 @@
                 color: white; 
                 font-weight:bold; 
                 padding:0; 
+                margin:0; 
             }
             .AlinhaRowReverse{
                 width:100%; 
@@ -54,6 +55,37 @@
                 flex-direction:row; 
                 flex-wrap:wrap; 
             }
+            .AlinhaColumn{
+                width:100%;
+                height:490px; 
+                border:1px solid red;
+                display:flex; 
+                flex-direction:column; 
+            }
+            .AlinhaColumnReverse{
+                width:100%; 
+                height:490px; 
+                border:1px solid red; 
+                display:flex; 
+                flex-direction:column-reverse;
+            }
+            .AlinhaNoWrap{
+                width:100%;
+                height:auto;
+                border:1px solid red; 
+                display:flex; 
+                flex-direction:row; 
+                flex-wrap:nowrap; 
+            }
+            .AlinhaWrapReverse{
+                width:100%; 
+                height:auto; 
+                border:1px solid red; 
+                display:flex; 
+                flex-direction:row; 
+                flex-wrap:wrap-reverse; 
+            }
+
         </style>
     </head>
     <body>
@@ -118,8 +150,8 @@
             </div>
         </div>
         <br>
-        <h5>3.3. display:flex; flex-direction:row; flex-wrap: wrap; - Nesse caso os elementos serão dispostos no eixo horizontal, e vão quebrar ficando empilhados um abaixo do outro quando não couberem mais la largura disponível</h5>
-                <div class="AlinhaWrap">
+        <h5>3.3. display:flex; flex-direction:row; flex-wrap: wrap; - Nesse caso os elementos serão dispostos no eixo horizontal, e vão quebrar ficando empilhados um abaixo do outro quando não couberem mais la largura disponível. Esquerda para a direita, ou seja, no eixo principal.</h5>
+        <div class="AlinhaWrap">
             <div class="Caixa">
                 <p>Item 1</p>
             </div>
@@ -139,8 +171,82 @@
                 <p>Item 6</p>
             </div>
         </div>
-
-
+        <br>
+        <h5>3.4. display:flex; flex-direction:column; Faz com que os elementos se alinhem em colunas de cima para baixo.</h5>
+        <div class="AlinhaColumn">
+            <div class="Caixa">
+                <p>Item 1</p>
+            </div>
+            <div class="Caixa">
+                 <p>Item 2</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 3</p>
+            </div>
+        </div>
+        <br>
+        <h5>3.5. display:flex; flex-direction:column-reverse; Faz com que os elementos se alinha em coluna de baixo para cima. "De forma reversa" no caso.</h5>
+        <div class="AlinhaColumnReverse">  
+            <div class="Caixa">
+                <p>Item 1</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 2</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 3</p>
+            </div>
+        </div>
+        <br>
+        <h5>3.6. display:flex; flex-direction:row; flex-wrap:nowrap; Impede que os itens dispostos em colunas se quebrem para baixo quando não á mais espaço.</h5>
+        <div class="AlinhaNoWrap">
+            <div class="Caixa">
+                <p>Item 1</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 2</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 3</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 4</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 5</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 6</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 7</p>
+            </div>
+        </div>
+        <br>
+        <h5>3.7. display:flex; flex-direction:row; flex-wrap:wrap-reverse; Quando o witdh do container pai não é mais suficiente, os elemento são quebrado para a linha de cima. Esquerda para a Direita. Eixo Principal. </h5>
+        <div class="AlinhaWrapReverse">
+            <div class="Caixa">
+                <p>Item 1</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 2</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 3</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 4</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 5</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 6</p>
+            </div>
+            <div class="Caixa">
+                <p>Item 7</p>
+            </div>
+        </div>   
 
 
     </body>
