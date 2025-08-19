@@ -86,13 +86,15 @@
                 flex-wrap:wrap-reverse; 
             }
             .AlinhaFlexStart{
-                width:500px; 
-                height:500px; 
+                width:100%; 
+                height:180px; 
                 display:flex; 
                 justify-content:flex-start; 
                 flex-direction:row; 
                 flex-wrap:nowrap; 
                 padding:0; 
+                border:1px solid red; 
+                gap:5%; 
             }
 
             .AlinhaFlexStart > p{
@@ -102,10 +104,31 @@
                 background-color:black; 
                 font-size:20px; 
                 font-weight:bold; 
-                margin:20px; 
                 padding:34px 20px; 
                 color:white;
                 border-radius:10px;
+            }
+            .alinhaFlexEnd{
+                width:100%; 
+                height:180; 
+                border:1px solid red; 
+                display:flex; 
+                flex-direction:row; 
+                justify-content:flex-end; 
+                padding:0; 
+                gap:5%; 
+            }
+
+            .alinhaFlexEnd > p{
+                width:100px; 
+                height:100px; 
+                border:1px solid black; 
+                background-color:black; 
+                color:white; 
+                text-align:center; 
+                border-radius: 10px; 
+                padding:40px 20px 30px 20px;
+                font-weight:bold;  
             }
         </style>
     </head>
@@ -120,6 +143,10 @@
         <h6>Isso é um h6</h6>
         <p>Isso é um p</p>
         <footer>Isso é um footer</footer>
+        <form>
+            <label for="fname">Primeiro Nome</label>
+            <input type="text" id="fname" name="fname"></input>
+        </form>
         <hr>
         <h3>2. Abaixo podemos ver alguns exemplos de display:inline;, sendo eles o img, a, span</h3>
         <img src="img/tubas.jpg" width="50px" height="50px">
@@ -277,5 +304,22 @@
             <p>Item 3</p>
             <p>Item 4</p>
         </div>
+        <br>
+        <h5>3.9. display:flex; jusitify-content:flex-end;</h5>
+        <div class="alinhaFlexEnd">
+            <p>Item 1</p>
+            <p>Item 2</p>
+            <p>Item 3</p>
+            <p>Item 4</p>
+        </div>
+        <br>
+        <h5>3.10. display:flex; justify-content:center;</h5>
+        <div>
+            <p>Item 1</p>
+            <p>Item 2</p>
+            <p>Item 3</p>
+            <p>Item 4</p>
+        </div>
+
     </body>
 </html>
