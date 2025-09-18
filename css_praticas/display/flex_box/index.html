@@ -219,6 +219,98 @@
                 padding-top:40px; 
                 text-align:center; 
             }
+
+            .itemsStretch{
+                display:flex; 
+                width:100%;
+                border: 2px solid red; 
+                height:600px;
+                flex-direction:row; 
+                flex-wrap:wrap; 
+                justify-content:space-evenly;
+                align-items:stretch; 
+            }
+
+            .itemsStretch > div{
+                width:100px; 
+                height:auto; 
+                border:1px solid black; 
+                border-radius:10px;
+                font-weight:bold; 
+                padding-top:40px; 
+                background-color:black; 
+                text-align:center; 
+                color:white; 
+            } 
+
+              .itemsStart{
+                display:flex; 
+                width:100%;
+                border: 2px solid red; 
+                height:600px;
+                flex-direction:row; 
+                flex-wrap:wrap; 
+                justify-content:space-evenly;
+                align-items:flex-start; 
+            }
+
+            .itemsStart > div{
+                width:100px; 
+                height:auto; 
+                border:1px solid black; 
+                border-radius:10px;
+                font-weight:bold; 
+                padding-top:40px; 
+                background-color:black; 
+                text-align:center; 
+                color:white; 
+            } 
+                 .itemsEnd{
+                display:flex; 
+                width:100%;
+                border: 2px solid red; 
+                height:600px;
+                flex-direction:row; 
+                flex-wrap:wrap; 
+                justify-content:space-evenly;
+                align-items:flex-end; 
+            }
+
+            .itemsEnd > div{
+                width:100px; 
+                height:auto; 
+                border:1px solid black; 
+                border-radius:10px;
+                font-weight:bold; 
+                padding-top:40px; 
+                background-color:black; 
+                text-align:center; 
+                color:white; 
+            } 
+            .itemsCenter{
+                display:flex; 
+                width:100%;
+                border: 2px solid red; 
+                height:600px;
+                flex-direction:row; 
+                flex-wrap:wrap; 
+                justify-content:space-evenly;
+                align-items: space-betwen; 
+            }
+
+            .itemsCenter > div{
+                width:100px; 
+                height:auto; 
+                border:1px solid black; 
+                border-radius:10px;
+                font-weight:bold; 
+                padding-top:40px; 
+                background-color:black; 
+                text-align:center; 
+                color:white; 
+            } 
+
+
         </style>
     </head>
     <body>
@@ -432,6 +524,46 @@
             <p>Item 2</p>
             <p>Item 3</p>
             <p>Item 4</p>
+        </div>
+        <br>
+        <div class="itemsStretch"> 
+            <div>Item 1</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+            <div>Item 4</div>
+            <div>Item 5</div>
+            <div>Item 6</div>
+            <div>Item 7</div>
+        </div>
+        <br>
+        <div class="itemsStart"> 
+            <div>Item 1</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+            <div>Item 4</div>
+            <div>Item 5</div>
+            <div>Item 6</div>
+            <div>Item 7</div>
+        </div>
+        <br>
+        <div class="itemsEnd"> 
+            <div>Item 1</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+            <div>Item 4</div>
+            <div>Item 5</div>
+            <div>Item 6</div>
+            <div>Item 7</div>
+        </div>
+            <br>
+        <div class="itemsCenter"> 
+            <div>Item 1</div>
+            <div>Item 2</div>
+            <div>Item 3</div>
+            <div>Item 4</div>
+            <div>Item 5</div>
+            <div>Item 6</div>
+            <div>Item 7</div>
         </div>
 
     </body>
